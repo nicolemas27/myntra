@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Live Streaming</title>
+    <link rel="stylesheet" href="live.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Men</a></li>
+                <li><a href="#">Women</a></li>
+                <li><a href="#">Kids</a></li>
+                <li><a href="#">Home & Living</a></li>
+                <li><a href="#">Beauty</a></li>
+                <li><a href="#">Studio</a></li>
+                <li><a href="#" class="live">LIVE</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="video-section">
+            <video controls>
+                <source src="video/fashionvideo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="live-chat">
+            <div class="chat-header">
+                <h3>Live Chat</h3>
+            </div>
+            <div class="chat-body">
+                <p><strong>Soniya</strong>: I vote for this fashion! Amazing</p>
+                <p><strong>Nerice</strong>: I vote for this fashion! Amazing</p>
+                <p><strong>Bliss</strong>: I vote for this fashion! Amazing</p>
+            </div>
+            <div class="vote-section">
+                <span class="star-rating">
+                    ★★★★★
+                </span>
+                <button onclick="vote()">VOTE</button>
+                <button onclick="swipe()">SWIPE</button>
+                <div id="vote-count">Votes: 0</div>
+            </div>
+        </div>
+    </main>
+
+    <script src="live.js"></script>
+</body>
+</html>

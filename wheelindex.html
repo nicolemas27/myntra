@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spin the Wheel - Clothing Offers</title>
+    <link rel="stylesheet" href="wheel.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Fashion Spin</div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Offers</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="wheel-container">
+            <h1>Spin the Wheel to Win Amazing Clothing Offers!</h1>
+            <div class="deal-wheel" id="wheel">
+                <ul class="spinner" id="spinner">
+                    <!-- Prize slices will be inserted here by JavaScript -->
+                </ul>
+                <div class="ticker"></div>
+            </div>
+            <button class="btn-spin" id="spinButton">Spin the Wheel</button>
+        </div>
+        <div class="popup" id="popup">
+            <div class="popup-content">
+                <h2 id="offerText">Hurray! I got an offer!</h2>
+                <button id="closePopup">Close</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Fashion Spin. All rights reserved.</p>
+    </footer>
+    <script src="wheel.js"></script>
+</body>
+</html>
